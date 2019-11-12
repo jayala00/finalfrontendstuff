@@ -25,7 +25,7 @@ import { DriverComponent } from './driver/driver.component';
     LoginComponent,
     AdminComponent,
     CreatedriverComponent,
-
+    CreatesponsorComponent,
     ActualloginComponent,
     DriverloginComponent,
     SponsorloginComponent,

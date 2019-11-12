@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -23,7 +24,7 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     console.log(this.email);
     console.log(this.password);
-
+    
     if ( (this.email == this.user) && (this.password == this.pass)){
       this.router.navigate(['/admin'])
     }

@@ -16,4 +16,14 @@ export class AdminComponent implements OnInit {
   onHyperLink(){
     this.router.navigate(['/createdriver'])
   }
+
+  
+  onCreateSponsor() {
+    this.router.navigate(['/createsponsor'])
+  }
+
+  onViewDrivers() {
+    this.router.navigate(['viewdrivers'])
+  }
+  
 }

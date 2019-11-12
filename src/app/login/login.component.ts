@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     console.log(this.email);
     console.log(this.password);
-
     
     if ( (this.email == this.user) && (this.password == this.pass)){
       this.router.navigate(['/admin'])

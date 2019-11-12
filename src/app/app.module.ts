@@ -30,7 +30,7 @@ import { DriverComponent } from './driver/driver.component';
     DriverloginComponent,
     SponsorloginComponent,
     CreateadminComponent,
-
+    CreatesponsorComponent,
     DriverComponent
 
   ],

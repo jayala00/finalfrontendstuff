@@ -17,7 +17,7 @@ export class DriverComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit() { 
     this.driverService.getUsers()
       .subscribe( data => {
         this.drivers = data;

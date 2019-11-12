@@ -27,27 +27,27 @@
                                           <div class="col-12">
                                                 <div class="form-group">
                                                   <label class="form-control-label" for="input-driverid">Driver ID</label>
-                                                  <input type="text" id="input-driverid" class="form-control form-control-alternative" placeholder="Driver ID">
+                                                  <input type="driverID" [(ngModel)]="driver.driverID" placeholder="driverID" name="driverID" class="form-control" id="driverID">
                                                 </div>
                                                 <div class="form-group">
                                                   <label class="form-control-label" for="input-email">Email</label>
-                                                  <input type="text" id="input-email" class="form-control form-control-alternative" placeholder="Email">
+                                                  <input type="email" [(ngModel)]="driver.email" placeholder="email" name="email" class="form-control" id="email">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-first-name">First name</label>
-                                                    <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name">
+                                                    <input type="firstname" [(ngModel)]="driver.firstname" placeholder="firstname" name="firstname" class="form-control" id="firstname">
                                                 </div>  
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-last-name">Last name</label>
-                                                    <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name">
+                                                    <input type="lastname" [(ngModel)]="driver.lastname" placeholder="lastname" name="lastname" class="form-control" id="lastname">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-password">Password</label>
-                                                    <input type="text" id="input-password" class="form-control form-control-alternative" placeholder="Password">
+                                                    <input type="password" [(ngModel)]="driver.password" placeholder="password" name="password" class="form-control" id="password">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="form-control-label" for="input-address">Address</label>
-                                                    <input type="text" id="input-address" class="form-control form-control-alternative" placeholder="Address">
+                                                    <input type="address" [(ngModel)]="driver.address" placeholder="address" name="address" class="form-control" id="address">
                                                 </div>
                                           </div>
                                       </div>
@@ -56,7 +56,7 @@
                               <div class="padding-top-x5">
                                   <div class="padding-top-x5">
                                       <div class="text-center">
-                                          <button type="submit" class="rover-btn btn-block-xs rover-btn-primary js-wizard-next-section">Save & Continue</button>
+                                          <button type="submit" class="rover-btn btn-block-xs rover-btn-primary js-wizard-next-section" (click)="onSubmit()">Save & Continue</button>
                                       </div>
                                   </div>
                               </div>

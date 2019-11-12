@@ -28,7 +28,7 @@ export class AdminComponent implements OnInit {
   }
 
   onViewDrivers() {
-    this.router.navigate(['viewdrivers'])
+    this.router.navigate(['/viewdrivers'])
   }
   
 

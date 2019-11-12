@@ -9,7 +9,6 @@ import { DriverloginComponent } from './driverlogin/driverlogin.component';
 import { SponsorloginComponent } from './sponsorlogin/sponsorlogin.component';
 import { CreateadminComponent } from './createadmin/createadmin.component';
 
-import { CreatesponsorComponent } from './createsponsor/createsponsor.component';
 import { DriverComponent } from './driver/driver.component';
 
 
@@ -23,9 +22,9 @@ const routes: Routes = [
 
   { path:'driverlogin', component:DriverloginComponent},
   { path:'sponsorlogin', component:SponsorloginComponent},
-  { path:'createadmin', component:CreateadminComponent}
+  { path:'createadmin', component:CreateadminComponent},
 
-  { path:'createsponsor', component:CreatesponsorComponent},
+
   { path:'viewdriver', component:DriverComponent}
 
 ];

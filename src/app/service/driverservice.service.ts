@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import {Driver} from '../driver';
 
@@ -11,7 +11,7 @@ export class DriverserviceService {
 
   constructor(private http:HttpClient) { }
 
-  private driverUrl = 'http://localhost:8080';
+  private driverUrl = 'http://localhost:8080/driver';
 
   public createDriver(driver) {
     return this.http.post<Driver>(this.driverUrl + '/adddrivers', driver);

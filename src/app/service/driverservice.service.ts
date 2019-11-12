@@ -18,7 +18,7 @@ export class DriverserviceService {
   }
 
   public getUsers() {
-    return this.http.get<Driver[]>(this.driverUrl + '/getdrivers');
+    return this.http.get<Driver[]>(this.driverUrl + '/getalldrivers');
   }
 
   public deleteUser(driver) {

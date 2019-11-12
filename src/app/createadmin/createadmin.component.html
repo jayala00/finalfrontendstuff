@@ -18,10 +18,24 @@
                                     <div class="pl-lg-4">
                                         <div class="col-lg-6">
                                             <div class="form-group">
+                                                <label class="form-control-label" for="input-adminID">AdminId</label>
+                                                <input type="adminId" [(ngModel)]="admin.adminId" placeholder="adminId" name="adminId" class="form-control" id="adminId">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-lg-4">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
                                                 <label class="form-control-label" for="input-email">Email address</label>
-                                                <input type="email" id="input-email"
-                                                       class="form-control form-control-alternative"
-                                                       placeholder="Email address">
+                                                <input type="email" [(ngModel)]="admin.email" placeholder="email" name="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-lg-4">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-email">Address</label>
+                                                <input type="address" [(ngModel)]="admin.address" placeholder="address" name="address" class="form-control" id="address">
                                             </div>
                                         </div>
                                     </div>
@@ -29,15 +43,13 @@
                                         <div class="col-lg-6">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-first-name">First name</label>
-                                                <input type="text" id="input-first-name"
-                                                       class="form-control form-control-alternative" placeholder="First name">
+                                                <input type="firstname" [(ngModel)]="admin.firstname" placeholder="firstname" name="firstname" class="form-control" id="firstname">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-last-name">Last name</label>
-                                                <input type="text" id="input-last-name"
-                                                       class="form-control form-control-alternative" placeholder="Last name">
+                                                <input type="lastname" [(ngModel)]="admin.lastname" placeholder="lastname" name="lastname" class="form-control" id="lastname">
         
                                                 
         
@@ -46,9 +58,7 @@
                                                         <div class="form-group focused">
                                                             <label class="form-control-label"
                                                                    for="input-address">Password</label>
-                                                            <input id="input-password"
-                                                                   class="form-control form-control-alternative"
-                                                                   placeholder="Password" type="text">
+                                                                   <input type="password" [(ngModel)]="admin.password" placeholder="password" name="password" class="form-control" id="password">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -62,6 +72,13 @@
                                                             </div>
         
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="padding-top-x5">
+                                        <div class="padding-top-x5">
+                                            <div class="text-center">
+                                                <button type="submit" class="rover-btn btn-block-xs rover-btn-primary js-wizard-next-section" (click)="onSubmit()">Save & Continue</button>
                                             </div>
                                         </div>
                                     </div>

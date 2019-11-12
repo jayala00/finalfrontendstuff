@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { Sponsor } from '../sponsor';
+import {SponsorserviceService} from '../service/sponsorservice.service';
 
 @Component({
   selector: 'app-createsponsor',
@@ -8,12 +10,25 @@ import {Router} from '@angular/router';
 })
 export class CreatesponsorComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  sponsor: Sponsor = new Sponsor();
+
+  constructor(private router:Router, private sponsorService:SponsorserviceService) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
+    console.log(this.sponsor.sponsorID);
+    console.log(this.sponsor.firstname);
+    console.log(this.sponsor.lastname);
+    console.log(this.sponsor.email);
+    console.log(this.sponsor.password);
+    console.log(this.sponsor.address);
+
+    this.sponsorService.createSponsor(this.sponsor)
+    .subscribe( data => {
+      alert('Sponsor created successfully.');
+    })
     this.router.navigate(['/admin'])
   }
 

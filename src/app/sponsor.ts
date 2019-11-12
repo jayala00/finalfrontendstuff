@@ -1,5 +1,5 @@
-export class Admin {
-    adminID: number;
+export class Sponsor {
+    sponsorID: number;
     firstname: string;
     lastname: string;
     email: string;

@@ -1,28 +1,29 @@
 
 <body>
 <div class="container">
-    <h1>Good Driver Incentive Program</h1>
+    <h1 style="text-align: center">Admin Login</h1>
 
-    <p style="font-size:30px">Log in</p>
+    <p style="font-size:30px" style="text-align: center">Please enter your associated email and password</p>
 
 
     <div class="input-group mb-3">
-        <input id="inputEmail" type="text" class="form-control" aria-label="Email" placeholder="Email" 
+    
+        <input style="margin: auto;display: block;" id="inputEmail" type="text" class="form-control" aria-label="Email" placeholder="Email" 
                aria-describedby="Email" required
                autofocus [(ngModel)]="email">
     </div>
 
-    <div class="input-group mb-3">
-        <input id="inputPassword" type="text" class="form-control" placeholder="Password" aria-label="Password" 
+    <div class="input-group mb-3" >
+        <input  style="margin: auto;display: block;" id="inputPassword" type="text" class="form-control" placeholder="Password" aria-label="Password" 
                aria-describedby="Password" [(ngModel)]="password">
     </div>
 
     <br>
-    <div><a href="reset.html">Forgot password?</a></div>
+    <div style="text-align: center;"><a  href="reset.html">Forgot password?</a></div>
     <br>
 
     <div>
-        <button style="font-size:20px" type="submit" (click)="onSubmit()">Sign in</button>
+        <button style="font-size:20px;margin:auto;display: block" type="submit" (click)="onSubmit()">Sign in</button>
     </div>
 </div>
 </body>

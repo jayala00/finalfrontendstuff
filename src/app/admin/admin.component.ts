@@ -16,4 +16,8 @@ export class AdminComponent implements OnInit {
   onHyperLink(){
     this.router.navigate(['/createdriver'])
   }
+
+  onAdminHyperLink(){
+    this.router.navigate(['/createadmin'])
+  }
 }

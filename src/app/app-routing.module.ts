@@ -3,10 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { CreatedriverComponent } from './createdriver/createdriver.component';
+
 import { ActualloginComponent } from './actuallogin/actuallogin.component';
 import { DriverloginComponent } from './driverlogin/driverlogin.component';
 import { SponsorloginComponent } from './sponsorlogin/sponsorlogin.component';
 import { CreateadminComponent } from './createadmin/createadmin.component';
+
+import { CreatesponsorComponent } from './createsponsor/createsponsor.component';
+import { DriverComponent } from './driver/driver.component';
+
 
 
 const routes: Routes = [
@@ -15,9 +20,14 @@ const routes: Routes = [
   { path:'login', component:LoginComponent},
   { path:'admin', component:AdminComponent},
   { path:'createdriver', component:CreatedriverComponent},
+
   { path:'driverlogin', component:DriverloginComponent},
   { path:'sponsorlogin', component:SponsorloginComponent},
   { path:'createadmin', component:CreateadminComponent}
+
+  { path:'createsponsor', component:CreatesponsorComponent},
+  { path:'viewdriver', component:DriverComponent}
+
 ];
 
 @NgModule({

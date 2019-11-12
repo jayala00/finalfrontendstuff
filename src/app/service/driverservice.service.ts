@@ -11,7 +11,7 @@ export class DriverserviceService {
 
   constructor(private http:HttpClient) { }
 
-  private driverUrl = 'http://localhost:8080/driver';
+  private driverUrl = 'http://localhost:8080';
 
   public createDriver(driver) {
     return this.http.post<Driver>(this.driverUrl + '/adddrivers', driver);

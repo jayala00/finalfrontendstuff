@@ -23,7 +23,7 @@ export class AdminComponent implements OnInit {
   }
 
   
-  onCreateSponsor() {
+  onSponsorHyperLink() {
     this.router.navigate(['/createsponsor'])
   }
 

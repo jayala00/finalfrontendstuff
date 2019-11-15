@@ -9,6 +9,8 @@ import { SponsorloginComponent } from './sponsorlogin/sponsorlogin.component';
 import { CreateadminComponent } from './createadmin/createadmin.component';
 import { DriverComponent } from './driver/driver.component';
 import { CreatesponsorComponent } from './createsponsor/createsponsor.component';
+import { ViewadminComponent } from './viewadmin/viewadmin.component';
+import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -20,8 +22,9 @@ const routes: Routes = [
   { path:'sponsorlogin', component:SponsorloginComponent},
   { path:'createadmin', component:CreateadminComponent},
   { path:'viewdrivers', component:DriverComponent},
-  { path:'createsponsor', component:CreatesponsorComponent}
-
+  { path:'createsponsor', component:CreatesponsorComponent},
+  { path:'viewadmins', component:ViewadminComponent },
+  { path: 'viewsponsors', component:ViewsponsorsComponent } 
 
 ];
 

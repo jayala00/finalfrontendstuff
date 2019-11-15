@@ -17,6 +17,8 @@ import { CreateadminComponent } from './createadmin/createadmin.component';
 
 import { CreatesponsorComponent } from './createsponsor/createsponsor.component';
 import { DriverComponent } from './driver/driver.component';
+import { ViewadminComponent } from './viewadmin/viewadmin.component';
+import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { DriverComponent } from './driver/driver.component';
     SponsorloginComponent,
     CreateadminComponent,
     CreatesponsorComponent,
-    DriverComponent
+    DriverComponent,
+    ViewadminComponent,
+    ViewsponsorsComponent
 
   ],
   imports: [

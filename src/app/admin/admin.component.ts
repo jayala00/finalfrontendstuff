@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { Admin } from '../admin';
 
 @Component({
   selector: 'app-admin',
@@ -9,6 +10,8 @@ import {Router} from '@angular/router';
 export class AdminComponent implements OnInit {
 
   constructor(private router: Router) { }
+
+  admins: Admin[];
 
   ngOnInit() {
   }
@@ -31,5 +34,11 @@ export class AdminComponent implements OnInit {
     this.router.navigate(['/viewdrivers'])
   }
   
+  onViewAdmins() {
+    this.router.navigate(['/viewadmins'])
+  }
 
+  onViewSponsors() {
+    this.router.navigate(['/viewsponsors'])
+  }
 }

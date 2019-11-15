@@ -22,7 +22,7 @@ export class DriverserviceService {
   }
 
   public deleteUser(driver) {
-    return this.http.delete(this.driverUrl + "/"+ driver.id);
+    return this.http.delete(this.driverUrl + "/deletedriver"+ driver.id);
   }
 }
 

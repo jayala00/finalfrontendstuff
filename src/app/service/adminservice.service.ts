@@ -14,4 +14,8 @@ export class AdminserviceService {
   public createAdmin(admin) {
     return this.http.post<Admin>(this.adminUrl + '/addadmin', admin);
   }
+
+  public getAdmin(email) {
+    return this.http.get<Admin>(this.adminUrl + '/getAdmin/' + email);
+  }
 }

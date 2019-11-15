@@ -12,13 +12,14 @@ export class AdminServiceService {
   constructor(private http: HttpClient) { }
 
   private adminUrl = 'http://localhost:8080/admin';
+  private sponsorUrl = 'http://localhost:8080/sponsor';
 
   public getAdmins() {
     return this.http.get<Admin[]>(this.adminUrl + '/getalladmin');
   }
 
   public getSponsors() {
-    return this.http.get<Sponsor[]>(this.adminUrl + '/getallsponsors');
+    return this.http.get<Sponsor[]>(this.sponsorUrl + '/getallsponsors');
   }
 
   public deleteAdmin(admin) {

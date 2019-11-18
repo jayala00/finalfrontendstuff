@@ -16,6 +16,6 @@ export class SponsorserviceService {
   }
 
   public getSponsor(email) {
-    return this.http.get<Sponsor>(this.sponsorUrl + '/getSponsor' + email);
+    return this.http.get<Sponsor>(this.sponsorUrl + '/getSponsor/' + email);
   }
 }

@@ -24,5 +24,9 @@ export class DriverserviceService {
   public deleteUser(driver) {
     return this.http.delete(this.driverUrl + "/deletedriver"+ driver.id);
   }
+
+  public getDriver (email){
+    return this.http.get<Driver>(this.driverUrl + '/getDriver/' + email);
+  }
 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-
+import { Admin } from '../admin';
+import { AdminserviceService } from '../service/adminservice.service';
 
 @Component({
   selector: 'app-login',
@@ -10,12 +10,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent implements OnInit {
 
-  user = 'admin';
-  pass = 'password';
+  admin: Admin = new Admin();
+
+  user:string;
+  pass:string;
   email:string;
   password:string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private adminService: AdminserviceService) { }
 
   ngOnInit() {
 
@@ -24,8 +26,16 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     console.log(this.email);
     console.log(this.password);
-    
-    if ( (this.email == this.user) && (this.password == this.pass)){
+
+     this.adminService.getAdmin(this.email)
+     .subscribe( data => {
+       this.admin = data;
+     })
+
+     this.user = this.admin.email;
+     this.pass = this.admin.password;
+
+     if ( (this.email == this.user) && (this.password == this.pass)){
       this.router.navigate(['/admin'])
     }
 

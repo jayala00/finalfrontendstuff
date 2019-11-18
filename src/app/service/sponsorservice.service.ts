@@ -14,4 +14,8 @@ export class SponsorserviceService {
   public createSponsor(sponsor) {
     return this.http.post<Sponsor>(this.sponsorUrl + '/addsponsor', sponsor);
   }
+
+  public getSponsor(email) {
+    return this.http.get<Sponsor>(this.sponsorUrl + '/getSponsor' + email);
+  }
 }

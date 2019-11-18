@@ -11,6 +11,8 @@ import { DriverComponent } from './driver/driver.component';
 import { CreatesponsorComponent } from './createsponsor/createsponsor.component';
 import { ViewadminComponent } from './viewadmin/viewadmin.component';
 import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
+import { DriverhomepageComponent } from './driverhomepage/driverhomepage.component';
+import { ManagedriveraccountComponent } from './managedriveraccount/managedriveraccount.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -24,8 +26,9 @@ const routes: Routes = [
   { path:'viewdrivers', component:DriverComponent},
   { path:'createsponsor', component:CreatesponsorComponent},
   { path:'viewadmins', component:ViewadminComponent },
-  { path: 'viewsponsors', component:ViewsponsorsComponent } 
-
+  { path: 'viewsponsors', component:ViewsponsorsComponent }, 
+  { path: 'driverhomepage', component:DriverhomepageComponent},
+  { path: 'managedriveraccount', component:ManagedriveraccountComponent}
 ];
 
 @NgModule({

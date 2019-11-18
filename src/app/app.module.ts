@@ -19,6 +19,8 @@ import { CreatesponsorComponent } from './createsponsor/createsponsor.component'
 import { DriverComponent } from './driver/driver.component';
 import { ViewadminComponent } from './viewadmin/viewadmin.component';
 import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
+import { DriverhomepageComponent } from './driverhomepage/driverhomepage.component';
+import { ManagedriveraccountComponent } from './managedriveraccount/managedriveraccount.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
     CreatesponsorComponent,
     DriverComponent,
     ViewadminComponent,
-    ViewsponsorsComponent
+    ViewsponsorsComponent,
+    DriverhomepageComponent,
+    ManagedriveraccountComponent
 
   ],
   imports: [

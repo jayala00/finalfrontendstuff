@@ -13,6 +13,8 @@ import { ViewadminComponent } from './viewadmin/viewadmin.component';
 import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
 import { DriverhomepageComponent } from './driverhomepage/driverhomepage.component';
 import { ManagedriveraccountComponent } from './managedriveraccount/managedriveraccount.component';
+import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.component';
+import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -28,7 +30,9 @@ const routes: Routes = [
   { path:'viewadmins', component:ViewadminComponent },
   { path: 'viewsponsors', component:ViewsponsorsComponent }, 
   { path: 'driverhomepage', component:DriverhomepageComponent},
-  { path: 'managedriveraccount', component:ManagedriveraccountComponent}
+  { path: 'managedriveraccount', component:ManagedriveraccountComponent},
+  { path: 'sponsorhomepage', component:SponsorhomepageComponent},
+  { path: 'managesponsoraccount', component:ManagesponsoraccountComponent}
 ];
 
 @NgModule({

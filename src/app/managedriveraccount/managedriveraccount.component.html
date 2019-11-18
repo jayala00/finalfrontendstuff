@@ -15,25 +15,21 @@
                                 <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                                 <table class="table table-hover table-sm table-properties">
-                                                        <tr v-show="user.sub">
-                                                          <th>sub</th>
-                                                          <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20rem;">{{user.sub}}</td>
-                                                        </tr>
-                                                        <tr v-show="user.password">
+                                                        <tr v-show="driver.password">
                                                           <th>password</th>
-                                                          <td>{{user.password}}</td>
+                                                          <td>{{driver.password}}</td>
                                                         </tr>
-                                                        <tr v-show="user.uid">
-                                                          <th>uid</th>
-                                                          <td>{{user.uid}}</td>
+                                                        <tr v-show="driver.driverID">
+                                                          <th>driverID</th>
+                                                          <td>{{driver.driverID}}</td>
                                                         </tr>
-                                                        <tr v-show="user.nickname">
-                                                          <th>nickname</th>
-                                                          <td>{{user.nickname}}</td>
+                                                        <tr v-show="driver.email">
+                                                          <th>email</th>
+                                                          <td>{{driver.nickname}}</td>
                                                         </tr>
-                                                        <tr v-show="user.preferred_username">
-                                                          <th>preferred username</th>
-                                                          <td>{{user.preferred_username}}</td>
+                                                        <tr v-show="driver.address">
+                                                          <th>address</th>
+                                                          <td>{{driver.address}}</td>
                                                         </tr>
                                                         <tr v-show="user.gender">
                                                           <th>gender</th>

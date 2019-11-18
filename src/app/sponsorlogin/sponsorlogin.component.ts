@@ -35,7 +35,7 @@ export class SponsorloginComponent implements OnInit {
     this.pass = this.sponsor.password;
 
     if ( (this.email == this.user) && (this.password == this.pass)){
-      this.router.navigate(['/viewsponsors'])
+      this.router.navigate(['/sponsorhomepage'])
     }
   }
 }

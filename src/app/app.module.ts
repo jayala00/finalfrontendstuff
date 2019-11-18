@@ -21,6 +21,8 @@ import { ViewadminComponent } from './viewadmin/viewadmin.component';
 import { ViewsponsorsComponent } from './viewsponsors/viewsponsors.component';
 import { DriverhomepageComponent } from './driverhomepage/driverhomepage.component';
 import { ManagedriveraccountComponent } from './managedriveraccount/managedriveraccount.component';
+import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.component';
+import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { ManagedriveraccountComponent } from './managedriveraccount/managedriver
     ViewadminComponent,
     ViewsponsorsComponent,
     DriverhomepageComponent,
-    ManagedriveraccountComponent
+    ManagedriveraccountComponent,
+    SponsorhomepageComponent,
+    ManagesponsoraccountComponent
 
   ],
   imports: [

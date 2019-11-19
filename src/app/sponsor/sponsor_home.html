@@ -1,0 +1,77 @@
+<body>
+
+    <h1 style="text-align: center;">Good Driver Incentive Program</h1>
+
+    <p style="font-size:30px;text-align: center;">Sponsor Homepage</p>
+
+    <div>
+        <button style="font-size:20px;margin: auto;display: block;" type="submit" (click)="onViewDrivers()">View Drivers</button>
+    </div>
+
+    <center>
+        <div>
+            <button style="font-size:20px;margin: auto;display: block;" type="submit" (click)="onHyperLink()">Create Driver</button>
+        </div>
+        </center>
+
+        <center>
+            <div style= "margin-left: 30%; margin-right: 30%;">
+                <br>
+            <h2>Add Driver Points</h2>
+            <form class="form-group" action="/updatePoints" method="post">
+                <label for="inputDriver" class="sr-only">Driver</label>
+                <input type="text" name="inputDriver" id="inputDriver" class="form-control" placeholder="Driver's Email" required autofocus>
+                <label for="inputCompany" class="sr-only">Company</label>
+                <input type="text" name="inputCompany" id="inputCompany" class="form-control" placeholder="Company Name" required autofocus>
+                <br>
+                <label for="inputPoints" class="sr-only">Points</label>
+                <input type="text" name="inputPoints" id="inputPoints" class="form-control" placeholder="Points to Give" required autofocus>
+                <br>
+
+                <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>                   
+        </form>
+        </div>    
+        </center>
+        
+        <center>
+            <div style= "margin-left: 30%; margin-right: 30%;">
+                <br>
+            <h2>Remove a Driver</h2>
+            <p>Enter a Driver's Email address and your Company Name to remove the Driver</p>
+            <form class="form-group" action="/dropEmployee" method="post">
+                <label for="inputDriver" class="sr-only">Driver</label>
+                <input type="text" name="inputDriver" id="inputDriver" class="form-control" placeholder="Driver's Email" required autofocus>
+                <label for="inputCompany" class="sr-only">Company</label>
+                <input type="text" name="inputCompany" id="inputCompany" class="form-control" placeholder="Company Name" required autofocus>
+                <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Remove</button>                   
+            </form>
+            </div>    
+        </center>
+
+        <center>
+            <div style= "margin-left: 30%; margin-right: 30%;">
+                <br>
+            <h2>Update Your Dollar/Point Ratio</h2>
+            <p>Enter your Company Name and a new Dollar/Point Ratio to update the value</p>
+            <form class="form-group" action="/updatePW" method="post">
+                <label for="inputName" class="sr-only">Company</label>
+                <input type="text" name="inputName" id="inputName" class="form-control" placeholder="Company Name" required autofocus>
+                <br>
+                <label for="inputPW" class="sr-only">New Dollar/Point Ratio</label>
+                <input type="text" name="inputPW" id="inputPW" class="form-control" placeholder="New Dollar/Point Ratio" required autofocus>
+                <br>
+                <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Update</button>                   
+            </form>
+            </div>    
+        </center>
+        
+        
+
+
+    <div>
+        <footer class="footer">
+            &copy; Team 404 - 2019
+        </footer>
+    </div>
+
+</body>

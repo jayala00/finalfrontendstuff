@@ -1,0 +1,25 @@
+
+
+<body>
+
+        <h1 style="text-align: center;">Good Driver Incentive Program</h1>
+    
+      
+        <center>
+                <h2><strong>Profile Information</strong></h2>
+                <table class="table table-user-information">
+                    <tbody>
+                        {% for elem in data[1] %}
+                            {% for key in elem %}
+                                <tr>
+                                <td><strong>{{key}}:</strong></td>
+                                <td>{{elem[key]}}</td>
+                                </tr>
+                                {% endfor %}
+                                {% endfor %}
+                        </tbody>
+                    </table>
+        
+        </center>
+    
+</body>

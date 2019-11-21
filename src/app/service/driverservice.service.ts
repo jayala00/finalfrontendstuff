@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import {Driver} from '../driver';
+import { DriverProfile } from '../driver-profile';
 
 @Injectable({
   providedIn: 'root'
@@ -21,12 +22,16 @@ export class DriverserviceService {
     return this.http.get<Driver[]>(this.driverUrl + '/getalldrivers');
   }
 
-  public deleteUser(driver) {
-    return this.http.delete(this.driverUrl + "/deletedriver"+ driver.id);
+  public deleteUser(id) {
+    return this.http.delete(this.driverUrl + "/deletedriver/"+ id);
   }
 
-  public getDriver (email){
+  public getDriver (email) {
     return this.http.get<Driver>(this.driverUrl + '/getDriver/' + email);
+  }
+
+  public getDriverProfile (email) {
+    return this.http.get<DriverProfile[]>(this.driverUrl + '/getDriverProfile/' + email);
   }
 }
 

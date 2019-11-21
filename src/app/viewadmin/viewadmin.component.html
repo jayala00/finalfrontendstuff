@@ -15,14 +15,14 @@
       </tr>
     </thead>
       <tbody>
-      <tr *ngFor="let driver of drivers">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <tr *ngFor="let admin of admins">
+        <td>{{admin.id}}</td>
+        <td>{{admin.adminID}}</td>
+        <td>{{admin.email}}</td>
+        <td>{{admin.firstname}}</td>
+        <td>{{admin.lastname}}</td>
+        <td>{{admin.password}}</td>
+        <td>{{admin.address}}</td>
         <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
       </tr>
       </tbody>

@@ -20,11 +20,13 @@ export class DriverComponent implements OnInit {
     this.driverService.getUsers()
       .subscribe( data => {
         this.drivers = data;
+        console.log("data :" + data);
+        var sample = JSON.stringify(this.drivers);
       });
   };
 
   deleteUser(user: Driver): void {
-    this.driverService.deleteUser(user)
+    this.driverService.deleteUser(user.driverID)
       .subscribe( data => {
         this.drivers = this.drivers.filter(u => u !== user);
       })

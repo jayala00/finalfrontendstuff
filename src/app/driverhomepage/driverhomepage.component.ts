@@ -17,4 +17,8 @@ export class DriverhomepageComponent implements OnInit {
     this.router.navigate(['/managedriveraccount'])
   }
 
+  onViewProfile() {
+    this.router.navigate(['/viewdriverprofile'])
+  }
+
 }

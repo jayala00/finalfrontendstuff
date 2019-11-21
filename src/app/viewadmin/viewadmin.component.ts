@@ -18,6 +18,8 @@ export class ViewadminComponent implements OnInit {
     this.adminService.getAdmins()
       .subscribe( data => {
         this.admins = data;
+        console.log("data :" + data);
+        var sample = JSON.stringify(this.admins);
       });
   }
 

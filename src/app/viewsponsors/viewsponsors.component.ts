@@ -18,6 +18,8 @@ export class ViewsponsorsComponent implements OnInit {
     this.adminService.getSponsors()
       .subscribe( data => {
         this.sponsors = data;
+        console.log("data :" + data);
+        var sample = JSON.stringify(this.sponsors);
       });
   }
 

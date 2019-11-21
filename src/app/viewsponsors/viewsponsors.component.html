@@ -5,7 +5,7 @@
       <thead>
       <tr>
         <th>Id</th>
-        <th>AdminID</th>
+        <th>SponsorID</th>
         <th>Email</th>
         <th>FirstName</th>
         <th>LastName</th>
@@ -15,14 +15,14 @@
       </tr>
     </thead>
       <tbody>
-      <tr *ngFor="let driver of drivers">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <tr *ngFor="let sponsor of sponsors">
+        <td>{{sponsor.id}}</td>
+        <td>{{sponsor.sponsorID}}</td>
+        <td>{{sponsor.email}}</td>
+        <td>{{sponsor.firstname}}</td>
+        <td>{{sponsor.lastname}}</td>
+        <td>{{sponsor.password}}</td>
+        <td>{{sponsor.address}}</td>
         <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
       </tr>
       </tbody>

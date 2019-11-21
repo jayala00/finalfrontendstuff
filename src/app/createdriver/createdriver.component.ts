@@ -24,6 +24,7 @@ export class CreatedriverComponent implements OnInit {
     console.log(this.driver.email);
     console.log(this.driver.password);
     console.log(this.driver.address);
+    console.log(this.driver.points);
 
     this.driverService.createDriver(this.driver)
     .subscribe( data => {

@@ -6,4 +6,5 @@ export class Driver {
     lastname: string;
     password: string;
     address: string;
+    points: Int16Array;
 }

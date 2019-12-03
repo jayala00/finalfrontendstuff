@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        <h1 style="text-align: center">Add Driver Points</h1>
+    
+        <p style="font-size:20px" style="text-align: center">Please enter the email of the driver and the amount of points you would like to add </p>
+    
+    
+
+        <div class="input-group mb-3">
+        
+            <input style="margin: auto;display: block;" id="inputemail" type="text" class="form-control" aria-label="email" placeholder="email@sample.com"
+                   aria-describedby="Email" required
+                   autofocus [(ngModel)]="email">
+        </div>
+        <div class="input-group mb-3">
+        
+            <input style="margin: auto;display: block;" id="inputPoints" type="number" class="form-control" aria-label="points" placeholder="Ex. 123456789" 
+                   aria-describedby="Points" required
+                   autofocus [(ngModel)]="points">
+        </div>
+        
+    
+
+
+        <div>
+            <button style="font-size:10px;margin:auto;display: block" type="submit" (click)="addPoints()">Add points</button>
+        </div>
+    </div>
+    </body>

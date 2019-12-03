@@ -32,4 +32,8 @@ export class DriverComponent implements OnInit {
       })
   };
 
+  addPointsPage(user: Driver): void {
+    this.router.navigate(['/add-points']);
+  }
+
 }

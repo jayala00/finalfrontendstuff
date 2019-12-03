@@ -11,7 +11,7 @@
         <th>LastName</th>
         <th>Password</th>
         <th>Address</th>
-        <th>Action</th>
+        <th>Points</th>
       </tr>
     </thead>
       <tbody>
@@ -23,7 +23,9 @@
         <td>{{driver.lastname}}</td>
         <td>{{driver.password}}</td>
         <td>{{driver.address}}</td>
+        <td>{{driver.points}}</td>
         <td><button class="btn btn-danger" (click)="deleteUser(driver)"> Delete Driver</button></td>
+        <td><button class="btn btn-danger" (click)="addPointsPage(driver)"> Add Points </button></td>
       </tr>
       </tbody>
     </table>

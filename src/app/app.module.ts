@@ -20,6 +20,7 @@ import { ManagedriveraccountComponent } from './managedriveraccount/managedriver
 import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.component';
 import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
+import { AddPointsComponent } from './add-points/add-points.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { DriverprofileComponent } from './driverprofile/driverprofile.component'
     ManagedriveraccountComponent,
     SponsorhomepageComponent,
     ManagesponsoraccountComponent,
-    DriverprofileComponent
+    DriverprofileComponent,
+    AddPointsComponent
 
   ],
   imports: [

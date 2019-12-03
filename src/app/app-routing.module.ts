@@ -17,6 +17,7 @@ import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.comp
 import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
 import { DriverProfile } from './driver-profile';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
+import { AddPointsComponent } from './add-points/add-points.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'driverhomepage', component:DriverhomepageComponent},
   { path: 'managedriveraccount', component:ManagedriveraccountComponent},
   { path: 'sponsorhomepage', component:SponsorhomepageComponent},
+  { path: 'add-points', component:AddPointsComponent},
   { path: 'managesponsoraccount', component:ManagesponsoraccountComponent},
   { path: 'viewdriverprofile', component:DriverprofileComponent}
 ];

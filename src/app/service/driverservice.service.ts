@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import {Driver} from '../driver';
 import { DriverProfile } from '../driver-profile';
+import { empty } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,10 @@ export class DriverserviceService {
 
   public getDriverProfile (email) {
     return this.http.get<DriverProfile[]>(this.driverUrl + '/getDriverProfile/' + email);
+  }
+
+  public addDriverPoints(email, driver) {
+    return this.http.post(this.driverUrl + "/addpoints/" + email, driver);
   }
 }
 

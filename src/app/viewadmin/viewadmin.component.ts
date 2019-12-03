@@ -24,7 +24,7 @@ export class ViewadminComponent implements OnInit {
   }
 
   deleteAdmin(user: Admin): void {
-    this.adminService.deleteAdmin(user)
+    this.adminService.deleteAdmin(user.adminID)
       .subscribe( data => {
         this.admins = this.admins.filter(u => u !== user);
       })

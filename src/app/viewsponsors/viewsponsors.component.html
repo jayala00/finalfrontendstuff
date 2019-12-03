@@ -4,7 +4,7 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th>Id</th>
+
         <th>SponsorID</th>
         <th>Email</th>
         <th>FirstName</th>
@@ -16,14 +16,14 @@
     </thead>
       <tbody>
       <tr *ngFor="let sponsor of sponsors">
-        <td>{{sponsor.id}}</td>
+        
         <td>{{sponsor.sponsorID}}</td>
         <td>{{sponsor.email}}</td>
         <td>{{sponsor.firstname}}</td>
         <td>{{sponsor.lastname}}</td>
         <td>{{sponsor.password}}</td>
         <td>{{sponsor.address}}</td>
-        <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
+        <td><button class="btn btn-danger" (click)="deleteSponsors(sponsor)"> Delete User</button></td>
       </tr>
       </tbody>
     </table>

@@ -26,7 +26,7 @@ export class DriverComponent implements OnInit {
   };
 
   deleteUser(user: Driver): void {
-    this.driverService.deleteUser(user.driverID)
+    this.driverService.deleteUser(user.id)
       .subscribe( data => {
         this.drivers = this.drivers.filter(u => u !== user);
       })

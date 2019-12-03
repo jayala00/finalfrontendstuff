@@ -22,11 +22,11 @@ export class AdminServiceService {
     return this.http.get<Sponsor[]>(this.sponsorUrl + '/getallsponsors');
   }
 
-  public deleteAdmin(admin) {
-    return this.http.delete(this.adminUrl + "/deleteadmin"+ admin.id);
+  public deleteAdmin(id) {
+    return this.http.delete(this.adminUrl + "/deleteadmin/"+ id);
   }
 
-  public deleteSponsor(sponsor) {
-    return this.http.delete(this.adminUrl + "/deletesponsor" + sponsor.id );
+  public deleteSponsor(sponsorID) {
+    return this.http.delete(this.adminUrl + "/deletesponsor/" + sponsorID );
   }
 }

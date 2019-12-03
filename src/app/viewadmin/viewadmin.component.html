@@ -4,7 +4,6 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th>Id</th>
         <th>AdminID</th>
         <th>Email</th>
         <th>FirstName</th>
@@ -16,14 +15,13 @@
     </thead>
       <tbody>
       <tr *ngFor="let admin of admins">
-        <td>{{admin.id}}</td>
         <td>{{admin.adminID}}</td>
         <td>{{admin.email}}</td>
         <td>{{admin.firstname}}</td>
         <td>{{admin.lastname}}</td>
         <td>{{admin.password}}</td>
         <td>{{admin.address}}</td>
-        <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
+        <td><button class="btn btn-danger" (click)="deleteAdmin(admin)"> Delete User</button></td>
       </tr>
       </tbody>
     </table>

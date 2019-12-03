@@ -24,7 +24,7 @@ export class ViewsponsorsComponent implements OnInit {
   }
 
   deleteSponsors(user: Sponsor): void {
-    this.adminService.deleteSponsor(user)
+    this.adminService.deleteSponsor(user.sponsorID)
       .subscribe( data => {
         this.sponsors = this.sponsors.filter(u => u !== user);
       })

@@ -30,4 +30,13 @@ export class ViewsponsorsComponent implements OnInit {
       })
   };
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
+
+  onCancel(){
+    this.router.navigate(['/admin'])
+  }
+
 }

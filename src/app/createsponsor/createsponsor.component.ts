@@ -19,8 +19,7 @@ export class CreatesponsorComponent implements OnInit {
 
   onSubmit() {
     console.log(this.sponsor.sponsorID);
-    console.log(this.sponsor.firstname);
-    console.log(this.sponsor.lastname);
+    console.log(this.sponsor.name);
     console.log(this.sponsor.email);
     console.log(this.sponsor.password);
     console.log(this.sponsor.address);
@@ -34,6 +33,10 @@ export class CreatesponsorComponent implements OnInit {
 
   onCancel(){
     this.router.navigate(['/admin'])
+  }
+
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
   }
 
 }

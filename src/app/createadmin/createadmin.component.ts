@@ -36,4 +36,8 @@ export class CreateadminComponent implements OnInit {
     this.router.navigate(['/admin'])
   }
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
 }

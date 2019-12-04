@@ -30,4 +30,14 @@ export class ViewadminComponent implements OnInit {
       })
   };
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
+
+  onCancel(){
+    this.router.navigate(['/admin'])
+  }
+
+
 }

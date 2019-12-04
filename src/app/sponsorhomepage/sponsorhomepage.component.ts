@@ -22,4 +22,8 @@ export class SponsorhomepageComponent implements OnInit {
     this.shopService.searcheBay
   }
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
 }

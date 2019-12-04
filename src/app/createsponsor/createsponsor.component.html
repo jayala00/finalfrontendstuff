@@ -1,4 +1,7 @@
 <body>
+        <div>
+                <button  style="font-size:20px;margin: auto;display: block;position: absolute; top:0;right:0;" type="submit" (click)="onLogout()">Logout</button>
+            </div>
     <div align="center" class="main-content">
         <div class="container mt-7">
             <!-- Info -->
@@ -42,16 +45,11 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group focused">
-                                            <label class="form-control-label" for="input-first-name">First name</label>
-                                            <input type="firstname" [(ngModel)]="sponsor.firstname" placeholder="firstname" name="firstname" class="form-control" id="firstname">
+                                            <label class="form-control-label" for="input-first-name">Name</label>
+                                            <input type="firstname" [(ngModel)]="sponsor.name" placeholder="Name" name="firstname" class="form-control" id="firstname">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-last-name">Last name</label>
-                                            <input type="lastname" [(ngModel)]="sponsor.lastname" placeholder="lastname" name="lastname" class="form-control" id="lastname">
-    
-                                            
+                                    
     
                                             <div class="row">
                                                 <div class="col-md-12">
@@ -62,12 +60,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-    
-    
-                                            </div>
-                                        </div>
-                                    </div>
+                                            
+                                        
                                 </div>
                                 <div class="padding-top-x5">
                                     <div class="padding-top-x5">

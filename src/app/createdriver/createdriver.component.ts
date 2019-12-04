@@ -37,4 +37,8 @@ export class CreatedriverComponent implements OnInit {
     this.router.navigate(['/admin'])
   }
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
 }

@@ -36,4 +36,12 @@ export class DriverComponent implements OnInit {
     this.router.navigate(['/add-points']);
   }
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
+  onCancel(){
+    this.router.navigate(['/admin'])
+  }
+
 }

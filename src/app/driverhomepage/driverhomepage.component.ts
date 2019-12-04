@@ -21,4 +21,8 @@ export class DriverhomepageComponent implements OnInit {
     this.router.navigate(['/viewdriverprofile'])
   }
 
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
+
 }

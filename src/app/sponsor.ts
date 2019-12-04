@@ -1,7 +1,6 @@
 export class Sponsor {
     sponsorID: number;
-    firstname: string;
-    lastname: string;
+    name: string;
     email: string;
     address: string;
     password: string;

@@ -41,4 +41,8 @@ export class AdminComponent implements OnInit {
   onViewSponsors() {
     this.router.navigate(['/viewsponsors'])
   }
+
+  onLogout(){
+    this.router.navigate(['/actuallogin'])
+  }
 }

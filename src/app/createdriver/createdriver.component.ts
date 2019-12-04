@@ -33,4 +33,8 @@ export class CreatedriverComponent implements OnInit {
     this.router.navigate(['/admin'])
   }
 
+  onCancel(){
+    this.router.navigate(['/admin'])
+  }
+
 }

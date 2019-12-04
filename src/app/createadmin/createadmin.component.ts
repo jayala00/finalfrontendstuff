@@ -32,4 +32,8 @@ export class CreateadminComponent implements OnInit {
     this.router.navigate(['/admin'])
   }
 
+  onCancel(){
+    this.router.navigate(['/admin'])
+  }
+
 }

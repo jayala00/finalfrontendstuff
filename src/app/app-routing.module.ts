@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'sponsorhomepage', component:SponsorhomepageComponent},
   { path: 'add-points', component:AddPointsComponent},
   { path: 'managesponsoraccount', component:ManagesponsoraccountComponent},
-  { path: 'viewdriverprofile', component:DriverprofileComponent}
+  { path: 'viewdriverprofile', component:DriverprofileComponent},
 ];
 
 @NgModule({

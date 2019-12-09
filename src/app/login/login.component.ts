@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
     console.log(this.email);
     console.log(this.password);
 
+
      this.adminService.getAdmin(this.email)
      .subscribe( data => {
        this.admin = data;
@@ -36,6 +37,8 @@ export class LoginComponent implements OnInit {
      this.pass = this.admin.password;
 
      if ( (this.email == this.user) && (this.password == this.pass)){
+      localStorage.setItem('token', this.user)
+
       this.router.navigate(['/admin'])
     }
 

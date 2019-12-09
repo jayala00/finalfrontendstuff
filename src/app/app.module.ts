@@ -43,7 +43,7 @@ import { AddPointsComponent } from './add-points/add-points.component';
     SponsorhomepageComponent,
     ManagesponsoraccountComponent,
     DriverprofileComponent,
-    AddPointsComponent
+    AddPointsComponent,
 
   ],
   imports: [

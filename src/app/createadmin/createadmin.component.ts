@@ -37,6 +37,7 @@ export class CreateadminComponent implements OnInit {
   }
 
   onLogout(){
+    localStorage.removeItem('token')
     this.router.navigate(['/actuallogin'])
   }
 

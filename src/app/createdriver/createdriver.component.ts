@@ -38,6 +38,7 @@ export class CreatedriverComponent implements OnInit {
   }
 
   onLogout(){
+    localStorage.removeItem('token')
     this.router.navigate(['/actuallogin'])
   }
 

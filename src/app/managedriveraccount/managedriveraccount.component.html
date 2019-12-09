@@ -1,139 +1,68 @@
-<body>
+<body align=center>
 
-    <h1>Good Driver Incentive Program</h1>
 
     <p style="font-size:30px">Driver Profile</p>
 
     <h6>Personal Information</h6>
-    <div>
-        <label for="view-username">Username</label>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <div align=center>
+        <div>
+            <button  style="font-size:20px;margin: auto;display: block;position: absolute; top:0;right:0;" type="submit" (click)="onLogout()">Logout</button>
+        </div>
 
-        <div id="user" class="container profile" style="display: none;">
+
+        <div id="user" class="container profile" >
                 <div class="row mt-2">
                         <div class="col">
                                 <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                                 <table class="table table-hover table-sm table-properties">
                                                         <tr v-show="driver.password">
-                                                          <th>password</th>
+                                                          <th>Password</th>
                                                           <td>{{driver.password}}</td>
+                                                          <td><button class="btn btn-danger" (click)="editPassword()"> Edit Password </button></td>
                                                         </tr>
                                                         <tr v-show="driver.driverID">
-                                                          <th>driverID</th>
+                                                          <th>DriverID</th>
                                                           <td>{{driver.driverID}}</td>
+                                                          <td><button class="btn btn-danger" (click)="editdriverid()"> Edit DriverID </button></td>
                                                         </tr>
-                                                        <tr v-show="driver.email">
-                                                          <th>email</th>
-                                                          <td>{{driver.nickname}}</td>
-                                                        </tr>
+                                    
                                                         <tr v-show="driver.address">
-                                                          <th>address</th>
+                                                          <th>Address</th>
                                                           <td>{{driver.address}}</td>
+                                                          <td><button class="btn btn-danger" (click)="editAddress()"> Edit Address </button></td>
                                                         </tr>
-                                                        <tr v-show="user.gender">
-                                                          <th>gender</th>
-                                                          <td>{{user.gender}}</td>
-                                                        </tr>
-                                                        <tr v-show="user.birthdate">
-                                                          <th>birthdate</th>
-                                                          <td>{{user.birthdate}}</td>
-                                                        </tr>
-                                                        <tr v-show="user.locale">
-                                                          <th>locale</th>
-                                                          <td>{{user.locale}}</td>
-                                                        </tr>
-                                                        <tr v-show="user.zoneinfo">
-                                                          <th>zoneinfo</th>
-                                                          <td>{{user.zoneinfo}}</td>
-                                                        </tr>
-                                                        <tr v-show="user.given_name">
-                                                          <th>given name</th>
-                                                          <td>{{user.given_name}}</td>
-                                                        </tr>
+                                        
+                                                      
                                                         <tr v-show="user.middle_name">
-                                                          <th>middle name</th>
-                                                          <td>{{user.middle_name}}</td>
+                                                          <th>First name</th>
+                                                          <td>{{driver.firstname}}</td>
+                                                          <td><button class="btn btn-danger" (click)="editFirstName()"> Edit First Name </button></td>
                                                         </tr>
                                                         <tr v-show="user.family_name">
-                                                          <th>family name</th>
-                                                          <td>{{user.family_name}}</td>
+                                                          <th>Last name</th>
+                                                          <td>{{driver.lastname}}</td>
+                                                          <td><button class="btn btn-danger" (click)="editLastname()"> Edit Last Name </button></td>
                                                         </tr>
+                                                        <tr v-show="user.email">
+                                                            <th>Email</th>
+                                                            <td>{{driver.email}}</td>
+                                                            <td><button class="btn btn-danger" (click)="editemail()"> Edit Email</button></td>
+                                                          </tr>
                                                       </table>
 
-                                                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                                            <table class="table table-hover table-sm table-properties">
-                                                                    <tr v-show="user.email">
-                                                                      <th>email</th>
-                                                                      <td>{{user.email}}</td>
-                                                                    </tr>
-                                                                    <tr v-show="user.email_verified">
-                                                                      <th>email verified</th>
-                                                                      <td>{{user.email_verified}}</td>
-                                                                    </tr>
-                                                                    <tr v-show="user.phone_number">
-                                                                      <th>phone number</th>
-                                                                      <td>{{user.phone_number}}</td>
-                                                                    </tr>
-                                                                    <tr v-show="user.phone_number_verified">
-                                                                      <th>phone number verified</th>
-                                                                      <td>{{user.phone_number_verified}}</td>
-                                                                    </tr>
-                                                                  </table>
+                                                
+                                                     
+                                                      <div class="padding-top-x5">
+                                                          <div class="padding-top-x5">
+                                                              <div class="text-center">
+                                                                  <button type="submit" class="rover-btn btn-block-xs rover-btn-primary js-wizard-next-section" (click)="onCancel()">Go Back</button>
+                                                              </div>
+                                                          </div>
                                                       </div>
 
-                                                      <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab"> 
-                                                            <table class="table table-hover table-sm table-properties">
-                                                              <tr v-show="user.address.country">
-                                                                <th>country</th>
-                                                                <td>{{user.address.country}}</td>
-                                                              </tr>
-                                                              <tr v-show="user.address.postal_code">
-                                                                <th>postal code</th>
-                                                                <td>{{user.address.postal_code}}</td>
-                                                              </tr>
-                                                              <tr v-show="user.address.locality">
-                                                                <th>locality</th>
-                                                                <td>{{user.address.locality}}</td>
-                                                              </tr>
-                                                              <tr v-show="user.address.region">
-                                                                <th>region</th>
-                                                                <td>{{user.address.region}}</td>
-                                                              </tr>
-                                                              <tr v-show="user.address.street_address">
-                                                                <th>street address</th>
-                                                                <td>{{user.address.street_address}}</td>
-                                                              </tr>
-                                                              <tr v-show="user.address.formatted">
-                                                                <th>formatted</th>
-                                                                <td>{{user.address.formatted}}</td>
-                                                              </tr>
-                                                            </table>
-                                                      </div>
-                                                      <div class="tab-pane fade" id="links" role="tabpanel" aria-labelledby="links-tab">
-                                                            <table class="table table-hover table-sm table-properties">
-                                                                    <tr v-show="user['@id']">
-                                                                      <th>@id</th>
-                                                                      <td><a v-bind:href="user['@id']">{{user["@id"]}}</a></td>
-                                                                    </tr>
-                                                                    <tr v-show="user.me">
-                                                                      <th>me</th>
-                                                                      <td><a v-bind:href="user.me">{{user.me}}</a></td>
-                                                                    </tr>
-                                                                    <tr v-show="user.website">
-                                                                      <th>website</th>
-                                                                      <td><a v-bind:href="user.website">{{user.website}}</a></td>
-                                                                    </tr>
-                                                                    <tr v-show="user.profile">
-                                                                      <th>profile</th>
-                                                                      <td><a v-bind:href="user.profile">{{user.profile}}</a></td>
-                                                                    </tr>
-                                                                    <tr v-show="user.webmail">
-                                                                      <th>webmail</th>
-                                                                      <td><a v-bind:href="user.webmail">{{user.webmail}}</a></td>
-                                                                    </tr>
-                                                                  </table>
-                                                      </div>
+                                                
+                                                    
                                         </div>
                                 </div>
                         </div>

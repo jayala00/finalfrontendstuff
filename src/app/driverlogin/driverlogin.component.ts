@@ -36,6 +36,8 @@ export class DriverloginComponent implements OnInit {
     this.pass = this.driver.password;
 
     if ( (this.email == this.user) && (this.password == this.pass)){
+
+      localStorage.setItem('token',this.user)
       this.router.navigate(['/driverhomepage'])
     }
   }

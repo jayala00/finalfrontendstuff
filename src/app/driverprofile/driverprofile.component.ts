@@ -11,19 +11,28 @@ import { DriverProfile } from '../driver-profile';
 })
 export class DriverprofileComponent implements OnInit {
 
-  drivers: DriverProfile[];
+  drivers: Driver = new Driver();
 
   constructor(private router: Router, private driverService: DriverserviceService) { }
 
-  email:string = 'dr@fakeemail.com';
+  email:string = 'driverone@app.com';
 
   ngOnInit() {
-    this.driverService.getDriverProfile(this.email)
+    this.driverService.getDriver(localStorage.getItem('token'))
       .subscribe( data => {
         this.drivers = data;
         console.log("data :" + data);
         var sample = JSON.stringify(this.drivers);
       });
   };
+
+  onLogout(){
+    localStorage.removeItem('token')
+    this.router.navigate(['/actuallogin'])
+  }
+
+  onCancel(){
+    this.router.navigate(['/driverhomepage'])
+  }
 
 }

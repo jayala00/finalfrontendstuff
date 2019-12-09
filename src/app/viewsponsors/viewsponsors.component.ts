@@ -31,6 +31,7 @@ export class ViewsponsorsComponent implements OnInit {
   };
 
   onLogout(){
+    localStorage.removeItem('token')
     this.router.navigate(['/actuallogin'])
   }
 

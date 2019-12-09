@@ -35,6 +35,8 @@ export class SponsorloginComponent implements OnInit {
     this.pass = this.sponsor.password;
 
     if ( (this.email == this.user) && (this.password == this.pass)){
+
+      localStorage.setItem('token',this.user)
       this.router.navigate(['/sponsorhomepage'])
     }
   }

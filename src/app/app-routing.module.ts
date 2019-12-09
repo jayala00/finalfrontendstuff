@@ -18,6 +18,9 @@ import { ManagesponsoraccountComponent } from './managesponsoraccount/managespon
 import { DriverProfile } from './driver-profile';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
 import { AddPointsComponent } from './add-points/add-points.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
+import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -38,6 +41,9 @@ const routes: Routes = [
   { path: 'add-points', component:AddPointsComponent},
   { path: 'managesponsoraccount', component:ManagesponsoraccountComponent},
   { path: 'viewdriverprofile', component:DriverprofileComponent},
+  { path: 'register', component:RegisterUserComponent},
+  { path: 'applysponsor', component:ApplySponsorComponent},
+  { path: 'shopcatalog', component:ShopCatalogComponent}
 ];
 
 @NgModule({

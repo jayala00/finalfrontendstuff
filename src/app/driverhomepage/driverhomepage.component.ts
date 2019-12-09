@@ -26,4 +26,11 @@ export class DriverhomepageComponent implements OnInit {
     this.router.navigate(['/actuallogin'])
   }
 
+  onApplySponsor() {
+    this.router.navigate(['/applysponsor'])
+  }
+
+  onShop() {
+    this.router.navigate(['/shopcatalog'])
+  }
 }

@@ -24,4 +24,8 @@ export class ActualloginComponent implements OnInit {
   onSignInSponsor(){
     this.router.navigate(['/sponsorlogin'])
   }
+
+  onRegister() {
+    this.router.navigate(['/register'])
+  }
 }

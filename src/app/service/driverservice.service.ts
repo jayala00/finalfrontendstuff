@@ -38,5 +38,9 @@ export class DriverserviceService {
   public addDriverPoints(email, driver) {
     return this.http.post(this.driverUrl + "/addpoints/" + email, driver);
   }
+
+  public registerDriver(driver) {
+    return this.http.post<Driver>(this.driverUrl + "/registerdriver/", driver);
+  }
 }
 

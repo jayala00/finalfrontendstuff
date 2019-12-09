@@ -18,4 +18,8 @@ export class SponsorserviceService {
   public getSponsor(email) {
     return this.http.get<Sponsor>(this.sponsorUrl + '/getSponsor/' + email);
   }
+
+  public registerSponsor(sponsor) {
+    return this.http.post<Sponsor>(this.sponsorUrl + "/registersponsor/", sponsor);
+  }
 }

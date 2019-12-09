@@ -30,6 +30,7 @@ import { EditemailComponent } from './editemail/editemail.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
 import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
 import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
+import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
     RegisterUserComponent,
     ApplySponsorComponent,
     ShopCatalogComponent,
+    SponsorprofileComponent,
 
   ],
   imports: [

@@ -27,6 +27,7 @@ import { EditidComponent } from './editid/editid.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
 import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
 import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
+import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -55,7 +56,8 @@ const routes: Routes = [
   { path: 'editid', component:EditidComponent},
   { path: 'register', component:RegisterUserComponent},
   { path: 'applysponsor', component:ApplySponsorComponent},
-  { path: 'shopcatalog', component:ShopCatalogComponent}
+  { path: 'shopcatalog', component:ShopCatalogComponent},
+  { path: 'viewsponsorprofile', component:SponsorprofileComponent}
 ];
 
 @NgModule({

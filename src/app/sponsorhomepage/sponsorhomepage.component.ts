@@ -14,6 +14,10 @@ export class SponsorhomepageComponent implements OnInit {
   ngOnInit() {
   }
 
+  onViewProfile() {
+    this.router.navigate(['/viewsponsorprofile'])
+  }
+
   onManageAccount() {
     this.router.navigate(['/managesponsoraccount'])
   }

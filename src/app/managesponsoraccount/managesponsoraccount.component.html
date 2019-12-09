@@ -1,8 +1,60 @@
-<body>
+<body align=center>
 
-        <h1>Good Driver Incentive Program</h1>
-    
-        <p style="font-size:30px">Driver Profile</p>
-    
-        <h2>Personal Information</h2>
-</body>
+
+                <p style="font-size:30px">Sponsor Profile</p>
+            
+                <h6>Personal Information</h6>
+                <div align=center>
+                    <div>
+                        <button  style="font-size:20px;margin: auto;display: block;position: absolute; top:0;right:0;" type="submit" (click)="onLogout()">Logout</button>
+                    </div>
+            
+            
+                    <div id="user" class="container profile" >
+                            <div class="row mt-2">
+                                    <div class="col">
+                                            <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                            <table class="table table-hover table-sm table-properties">
+                                                                    <tr v-show="sponsor.password">
+                                                                      <th>Password</th>
+                                                                      <td>{{sponsor.password}}</td>
+                                                                      <td><button class="btn btn-danger" (click)="editPassword()"> Edit Password </button></td>
+                                                                    </tr>
+                                                                    <tr v-show="sponsor.sponsorID">
+                                                                      <th>SponsorID</th>
+                                                                      <td>{{sponsor.sponsorID}}</td>
+                                                                      <td><button class="btn btn-danger" (click)="editdriverid()"> Edit SponsorID </button></td>
+                                                                    </tr>
+                                                
+                                                                    <tr v-show="sponsor.address">
+                                                                      <th>Address</th>
+                                                                      <td>{{sponsor.address}}</td>
+                                                                      <td><button class="btn btn-danger" (click)="editAddress()"> Edit Address </button></td>
+                                                                    </tr>
+                                                                    <tr v-show="sponsor.email">
+                                                                        <th>Email</th>
+                                                                        <td>{{sponsor.email}}</td>
+                                                                        <td><button class="btn btn-danger" (click)="editemail()"> Edit Email</button></td>
+                                                                      </tr>
+                                                                  </table>
+            
+                                                            
+                                                                 
+                                                                  <div class="padding-top-x5">
+                                                                      <div class="padding-top-x5">
+                                                                          <div class="text-center">
+                                                                              <button type="submit" class="rover-btn btn-block-xs rover-btn-primary js-wizard-next-section" (click)="onCancel()">Go Back</button>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+            
+                                                            
+                                                                
+                                                    </div>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </body>

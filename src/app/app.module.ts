@@ -53,19 +53,15 @@ import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
     ManagesponsoraccountComponent,
     DriverprofileComponent,
     AddPointsComponent,
-<<<<<<< HEAD
     EditdrivernameComponent,
     EditdrivernamelastComponent,
     EditdriverpasswordComponent,
     EditaddressComponent,
     EditidComponent,
     EditemailComponent,
-=======
     RegisterUserComponent,
-    EditDriverProfileComponent,
     ApplySponsorComponent,
     ShopCatalogComponent,
->>>>>>> profile
 
   ],
   imports: [

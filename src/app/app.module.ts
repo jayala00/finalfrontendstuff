@@ -21,6 +21,12 @@ import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.comp
 import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
 import { AddPointsComponent } from './add-points/add-points.component';
+import { EditdrivernameComponent } from './editdrivername/editdrivername.component';
+import { EditdrivernamelastComponent } from './editdrivernamelast/editdrivernamelast.component';
+import { EditdriverpasswordComponent } from './editdriverpassword/editdriverpassword.component';
+import { EditaddressComponent } from './editaddress/editaddress.component';
+import { EditidComponent } from './editid/editid.component';
+import { EditemailComponent } from './editemail/editemail.component';
 
 
 @NgModule({
@@ -44,6 +50,12 @@ import { AddPointsComponent } from './add-points/add-points.component';
     ManagesponsoraccountComponent,
     DriverprofileComponent,
     AddPointsComponent,
+    EditdrivernameComponent,
+    EditdrivernamelastComponent,
+    EditdriverpasswordComponent,
+    EditaddressComponent,
+    EditidComponent,
+    EditemailComponent,
 
   ],
   imports: [

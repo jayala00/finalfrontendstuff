@@ -18,6 +18,12 @@ import { ManagesponsoraccountComponent } from './managesponsoraccount/managespon
 import { DriverProfile } from './driver-profile';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
 import { AddPointsComponent } from './add-points/add-points.component';
+import { EditaddressComponent } from './editaddress/editaddress.component';
+import { EditdrivernameComponent } from './editdrivername/editdrivername.component';
+import { EditdrivernamelastComponent } from './editdrivernamelast/editdrivernamelast.component';
+import { EditdriverpasswordComponent } from './editdriverpassword/editdriverpassword.component';
+import { EditemailComponent } from './editemail/editemail.component';
+import { EditidComponent } from './editid/editid.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -38,6 +44,12 @@ const routes: Routes = [
   { path: 'add-points', component:AddPointsComponent},
   { path: 'managesponsoraccount', component:ManagesponsoraccountComponent},
   { path: 'viewdriverprofile', component:DriverprofileComponent},
+  { path: 'editaddress', component:EditaddressComponent},
+  { path: 'editdrivername', component:EditdrivernameComponent},
+  { path: 'editdrivernamelast', component:EditdrivernamelastComponent},
+  { path: 'editdriverpassword', component:EditdriverpasswordComponent},
+  { path: 'editemail', component:EditemailComponent},
+  { path: 'editid', component:EditidComponent},
 ];
 
 @NgModule({

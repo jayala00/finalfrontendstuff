@@ -32,5 +32,28 @@ export class ManagedriveraccountComponent implements OnInit {
     this.router.navigate(['/driverhomepage'])
   }
 
+  editPassword(){
+    this.router.navigate(['/editdriverpassword'])
+  }
+
+  editdriverid(){
+    this.router.navigate(['/editid'])
+  }
+
+  editAddress(){
+    this.router.navigate(['/editaddress'])
+  }
+
+  editFirstName(){
+    this.router.navigate(['/editdrivername'])
+  }
+
+  editLastname(){
+    this.router.navigate(['/editdrivernamelast'])
+  }
+
+  editemail(){
+    this.router.navigate(['/editemail'])
+  }
 
 }

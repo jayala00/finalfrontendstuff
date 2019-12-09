@@ -26,8 +26,11 @@ export class AddPointsComponent implements OnInit {
     console.log(this.email);
 
     this.driver.points = this.points;
+    console.log(this.driver)
 
-    this.driverService.addDriverPoints(this.email, this.driver);
+    this.driverService.addDriverPoints(this.driver, this.email).subscribe((reponse)=>{
+      console.log(reponse);
+     }); 
 
     this.router.navigate(['/viewdrivers']);
   }

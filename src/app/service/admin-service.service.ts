@@ -29,4 +29,8 @@ export class AdminServiceService {
   public deleteSponsor(sponsorID) {
     return this.http.delete(this.adminUrl + "/deletesponsor/" + sponsorID );
   }
+
+  public registerAdmin(admin) {
+    return this.http.post<Admin>(this.adminUrl + "/registeradmin/", admin);
+  }
 }

@@ -27,6 +27,9 @@ import { EditdriverpasswordComponent } from './editdriverpassword/editdriverpass
 import { EditaddressComponent } from './editaddress/editaddress.component';
 import { EditidComponent } from './editid/editid.component';
 import { EditemailComponent } from './editemail/editemail.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
+import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 
 
 @NgModule({
@@ -50,12 +53,19 @@ import { EditemailComponent } from './editemail/editemail.component';
     ManagesponsoraccountComponent,
     DriverprofileComponent,
     AddPointsComponent,
+<<<<<<< HEAD
     EditdrivernameComponent,
     EditdrivernamelastComponent,
     EditdriverpasswordComponent,
     EditaddressComponent,
     EditidComponent,
     EditemailComponent,
+=======
+    RegisterUserComponent,
+    EditDriverProfileComponent,
+    ApplySponsorComponent,
+    ShopCatalogComponent,
+>>>>>>> profile
 
   ],
   imports: [

@@ -14,9 +14,7 @@ export class DriverprofileComponent implements OnInit {
   drivers: Driver = new Driver();
 
   constructor(private router: Router, private driverService: DriverserviceService) { }
-
-  email:string = 'driverone@app.com';
-
+  
   ngOnInit() {
     this.driverService.getDriver(localStorage.getItem('token'))
       .subscribe( data => {
@@ -34,5 +32,4 @@ export class DriverprofileComponent implements OnInit {
   onCancel(){
     this.router.navigate(['/driverhomepage'])
   }
-
 }

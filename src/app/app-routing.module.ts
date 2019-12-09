@@ -24,6 +24,9 @@ import { EditdrivernamelastComponent } from './editdrivernamelast/editdrivername
 import { EditdriverpasswordComponent } from './editdriverpassword/editdriverpassword.component';
 import { EditemailComponent } from './editemail/editemail.component';
 import { EditidComponent } from './editid/editid.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
+import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -50,6 +53,9 @@ const routes: Routes = [
   { path: 'editdriverpassword', component:EditdriverpasswordComponent},
   { path: 'editemail', component:EditemailComponent},
   { path: 'editid', component:EditidComponent},
+  { path: 'register', component:RegisterUserComponent},
+  { path: 'applysponsor', component:ApplySponsorComponent},
+  { path: 'shopcatalog', component:ShopCatalogComponent}
 ];
 
 @NgModule({

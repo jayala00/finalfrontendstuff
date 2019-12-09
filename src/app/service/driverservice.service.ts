@@ -106,8 +106,8 @@ export class DriverserviceService {
      data));
   }
 
-
-
-
+  public registerDriver(driver) {
+    return this.http.post<Driver>(this.driverUrl + "/registerdriver/", driver);
+  }
 }
 

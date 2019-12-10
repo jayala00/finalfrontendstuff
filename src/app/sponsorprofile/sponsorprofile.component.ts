@@ -29,7 +29,7 @@ export class SponsorprofileComponent implements OnInit {
   }
 
   onCancel(){
-    this.router.navigate(['/driverhomepage'])
+    this.router.navigate(['/sponsorhomepage'])
   }
 
 }

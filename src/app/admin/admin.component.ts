@@ -16,6 +16,10 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  onManageAccount(){
+    this.router.navigate(['/manageadminaccount'])
+  }
+
   onHyperLink(){
     this.router.navigate(['/createdriver'])
   }

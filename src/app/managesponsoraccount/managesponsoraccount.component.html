@@ -24,7 +24,7 @@
                                                                     <tr v-show="sponsor.sponsorID">
                                                                       <th>SponsorID</th>
                                                                       <td>{{sponsor.sponsorID}}</td>
-                                                                      <td><button class="btn btn-danger" (click)="editdriverid()"> Edit SponsorID </button></td>
+                                                                      <td><button class="btn btn-danger" (click)="editsponsorid()"> Edit SponsorID </button></td>
                                                                     </tr>
                                                 
                                                                     <tr v-show="sponsor.address">
@@ -37,6 +37,11 @@
                                                                         <td>{{sponsor.email}}</td>
                                                                         <td><button class="btn btn-danger" (click)="editemail()"> Edit Email</button></td>
                                                                       </tr>
+                                                                      <tr v-show="sponsor.name">
+                                                                          <th>Name</th>
+                                                                          <td>{{sponsor.name}}</td>
+                                                                          <td><button class="btn btn-danger" (click)="editname()"> Edit Name</button></td>
+                                                                        </tr>
                                                                   </table>
             
                                                             

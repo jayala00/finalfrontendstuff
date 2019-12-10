@@ -15,7 +15,6 @@ import { DriverhomepageComponent } from './driverhomepage/driverhomepage.compone
 import { ManagedriveraccountComponent } from './managedriveraccount/managedriveraccount.component';
 import { SponsorhomepageComponent } from './sponsorhomepage/sponsorhomepage.component';
 import { ManagesponsoraccountComponent } from './managesponsoraccount/managesponsoraccount.component';
-import { DriverProfile } from './driver-profile';
 import { DriverprofileComponent } from './driverprofile/driverprofile.component';
 import { AddPointsComponent } from './add-points/add-points.component';
 import { EditaddressComponent } from './editaddress/editaddress.component';
@@ -28,6 +27,17 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
 import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.component';
+import { EditsponsornameComponent } from './editsponsorname/editsponsorname.component';
+import { EditsponsoraddressComponent } from './editsponsoraddress/editsponsoraddress.component';
+import { EditsponsorpasswordComponent } from './editsponsorpassword/editsponsorpassword.component';
+import { EditsponsoremailComponent } from './editsponsoremail/editsponsoremail.component';
+import { EditsponsoridComponent } from './editsponsorid/editsponsorid.component';
+import { EditadminemailComponent } from './editadminemail/editadminemail.component';
+import { EditadminfirstnameComponent } from './editadminfirstname/editadminfirstname.component';
+import { EditadminlastnameComponent } from './editadminlastname/editadminlastname.component';
+import { EditadminpasswordComponent } from './editadminpassword/editadminpassword.component';
+import { EditadminidComponent } from './editadminid/editadminid.component';
+import { ManageadminaccountComponent } from './manageadminaccount/manageadminaccount.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -57,7 +67,18 @@ const routes: Routes = [
   { path: 'register', component:RegisterUserComponent},
   { path: 'applysponsor', component:ApplySponsorComponent},
   { path: 'shopcatalog', component:ShopCatalogComponent},
-  { path: 'viewsponsorprofile', component:SponsorprofileComponent}
+  { path: 'viewsponsorprofile', component:SponsorprofileComponent},
+  { path: 'editsponsorname', component:EditsponsornameComponent},
+  { path: 'editsponsoraddress', component:EditsponsoraddressComponent},
+  { path: 'editsponsorpassword', component:EditsponsorpasswordComponent},
+  { path: 'editsponsoremail', component:EditsponsoremailComponent},
+  { path: 'editsponsorid', component:EditsponsoridComponent},
+  { path: 'editadminemail', component:EditadminemailComponent},
+  { path: 'editadminfirstname', component:EditadminfirstnameComponent},
+  { path: 'editadminlastname', component:EditadminlastnameComponent},
+  { path: 'editadminpassword', component:EditadminpasswordComponent},
+  { path: 'editadminid', component:EditadminidComponent},
+  { path: 'manageadminaccount', component:ManageadminaccountComponent},
 ];
 
 @NgModule({

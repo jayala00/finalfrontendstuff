@@ -33,26 +33,22 @@ export class ManagesponsoraccountComponent implements OnInit {
   }
 
   editPassword(){
-    this.router.navigate(['/editdriverpassword'])
+    this.router.navigate(['/editsponsorpassword'])
   }
 
-  editdriverid(){
-    this.router.navigate(['/editid'])
+  editsponsorid(){
+    this.router.navigate(['/editsponsorid'])
   }
 
   editAddress(){
-    this.router.navigate(['/editaddress'])
+    this.router.navigate(['/editsponsoraddress'])
   }
 
-  editFirstName(){
-    this.router.navigate(['/editdrivername'])
-  }
-
-  editLastname(){
-    this.router.navigate(['/editdrivernamelast'])
+  editname(){
+    this.router.navigate(['/editsponsorname'])
   }
 
   editemail(){
-    this.router.navigate(['/editemail'])
+    this.router.navigate(['/editsponsoremail'])
   }
 }

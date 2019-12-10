@@ -49,6 +49,10 @@
                                                             <td>{{driver.email}}</td>
                                                             <td><button class="btn btn-danger" (click)="editemail()"> Edit Email</button></td>
                                                           </tr>
+                                                          <tr v-show="user.email">
+                                                              <th>Points</th>
+                                                              <td>{{driver.points}}</td>
+                                                            </tr>
                                                       </table>
 
                                                 

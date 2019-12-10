@@ -23,7 +23,6 @@ export class CreateadminComponent implements OnInit {
     console.log(this.admin.lastname);
     console.log(this.admin.email);
     console.log(this.admin.password);
-    console.log(this.admin.address);
 
     this.adminService.createAdmin(this.admin)
     .subscribe( data => {

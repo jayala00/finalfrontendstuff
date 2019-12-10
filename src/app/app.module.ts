@@ -31,6 +31,17 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
 import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.component';
+import { EditsponsornameComponent } from './editsponsorname/editsponsorname.component';
+import { EditsponsorpasswordComponent } from './editsponsorpassword/editsponsorpassword.component';
+import { EditsponsoraddressComponent } from './editsponsoraddress/editsponsoraddress.component';
+import { EditsponsoremailComponent } from './editsponsoremail/editsponsoremail.component';
+import { EditsponsoridComponent } from './editsponsorid/editsponsorid.component';
+import { EditadminidComponent } from './editadminid/editadminid.component';
+import { EditadminfirstnameComponent } from './editadminfirstname/editadminfirstname.component';
+import { EditadminlastnameComponent } from './editadminlastname/editadminlastname.component';
+import { EditadminpasswordComponent } from './editadminpassword/editadminpassword.component';
+import { EditadminemailComponent } from './editadminemail/editadminemail.component';
+import { ManageadminaccountComponent } from './manageadminaccount/manageadminaccount.component';
 
 
 @NgModule({
@@ -64,6 +75,17 @@ import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.compone
     ApplySponsorComponent,
     ShopCatalogComponent,
     SponsorprofileComponent,
+    EditsponsornameComponent,
+    EditsponsorpasswordComponent,
+    EditsponsoraddressComponent,
+    EditsponsoremailComponent,
+    EditsponsoridComponent,
+    EditadminidComponent,
+    EditadminfirstnameComponent,
+    EditadminlastnameComponent,
+    EditadminpasswordComponent,
+    EditadminemailComponent,
+    ManageadminaccountComponent,
 
   ],
   imports: [

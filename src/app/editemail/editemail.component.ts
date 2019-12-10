@@ -33,6 +33,8 @@ export class EditemailComponent implements OnInit {
       console.log(reponse);
      }); 
 
+     localStorage.setItem('token',this.newemail)
+
     this.router.navigate(['/managedriveraccount']);
   }
 

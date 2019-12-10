@@ -1,8 +1,7 @@
 export class Admin {
-    adminID: number;
+    adminID: Int16Array;
     firstname: string;
     lastname: string;
     email: string;
-    address: string;
     password: string;
 }

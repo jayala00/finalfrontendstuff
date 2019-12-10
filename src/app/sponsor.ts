@@ -1,5 +1,5 @@
 export class Sponsor {
-    sponsorID: number;
+    sponsorID: Int16Array;
     name: string;
     email: string;
     address: string;

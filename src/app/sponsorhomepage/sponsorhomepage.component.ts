@@ -23,7 +23,7 @@ export class SponsorhomepageComponent implements OnInit {
   }
 
   onViewCatalog() {
-    this.shopService.searcheBay
+    this.router.navigate(['/catalog'])
   }
 
   onLogout(){

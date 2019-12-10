@@ -42,4 +42,8 @@ export class DriverloginComponent implements OnInit {
     }
   }
 
+  onReset(){
+    this.router.navigate(['/resetpassword'])
+  }
+
 }

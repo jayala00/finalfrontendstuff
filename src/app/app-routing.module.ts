@@ -38,6 +38,7 @@ import { EditadminlastnameComponent } from './editadminlastname/editadminlastnam
 import { EditadminpasswordComponent } from './editadminpassword/editadminpassword.component';
 import { EditadminidComponent } from './editadminid/editadminid.component';
 import { ManageadminaccountComponent } from './manageadminaccount/manageadminaccount.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'actuallogin', pathMatch: 'full'},
@@ -79,6 +80,7 @@ const routes: Routes = [
   { path: 'editadminpassword', component:EditadminpasswordComponent},
   { path: 'editadminid', component:EditadminidComponent},
   { path: 'manageadminaccount', component:ManageadminaccountComponent},
+  { path: 'resetpassword', component:ResetpasswordComponent},
 ];
 
 @NgModule({

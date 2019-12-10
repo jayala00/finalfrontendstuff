@@ -40,4 +40,8 @@ export class SponsorloginComponent implements OnInit {
       this.router.navigate(['/sponsorhomepage'])
     }
   }
+
+  onReset(){
+    this.router.navigate(['/resetpassword'])
+  }
 }

@@ -17,9 +17,9 @@
                        aria-describedby="Password" [(ngModel)]="password">
             </div>
         
-            <br>
-            <div style="text-align: center;"><a  href="reset.html">Forgot password?</a></div>
-            <br>
+            <div>
+                    <button style="font-size:20px;margin:auto;display: block" type="submit" (click)="onReset()">Forgot password?</button>
+                </div>
         
             <div>
                 <button style="font-size:20px;margin:auto;display: block" type="submit" (click)="onSubmit()">Sign in</button>

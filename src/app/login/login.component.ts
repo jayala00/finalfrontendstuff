@@ -41,9 +41,11 @@ export class LoginComponent implements OnInit {
 
       this.router.navigate(['/admin'])
     }
-
-
     
+  }
+
+  onReset(){
+    this.router.navigate(['/resetpassword'])
   }
 
   

@@ -32,7 +32,16 @@ export class AddPointsComponent implements OnInit {
       console.log(reponse);
      }); 
 
-    this.router.navigate(['/viewdrivers']);
+    this.router.navigate(['/sponsorviewsdrivers']);
+  }
+
+  onCancel(){
+    this.router.navigate(['sponsorviewsdrivers'])
+  }
+
+  onLogout(){
+    localStorage.removeItem('token')
+    this.router.navigate(['/actuallogin'])
   }
 
 }

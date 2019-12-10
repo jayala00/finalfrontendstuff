@@ -45,6 +45,7 @@ import { ManageadminaccountComponent } from './manageadminaccount/manageadminacc
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { DeletePointsComponent } from './delete-points/delete-points.component';
+import { SponsorviewsdriversComponent } from './sponsorviewsdrivers/sponsorviewsdrivers.component';
 
 
 @NgModule({
@@ -92,6 +93,7 @@ import { DeletePointsComponent } from './delete-points/delete-points.component';
     ResetpasswordComponent,
     CatalogComponent,
     DeletePointsComponent,
+    SponsorviewsdriversComponent,
 
   ],
   imports: [

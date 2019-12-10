@@ -26,6 +26,10 @@ export class SponsorhomepageComponent implements OnInit {
     this.router.navigate(['/catalog'])
   }
 
+  onViewDrivers(){
+    this.router.navigate(['/sponsorviewsdrivers'])
+  }
+
   onLogout(){
     this.router.navigate(['/actuallogin'])
   }

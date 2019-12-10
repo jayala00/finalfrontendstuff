@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Driver } from '../driver';
+import { Router } from '@angular/router';
 import { DriverserviceService } from '../service/driverservice.service';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './driver.component.html',
-  styles: []
+  selector: 'app-sponsorviewsdrivers',
+  templateUrl: './sponsorviewsdrivers.component.html',
+  styleUrls: ['./sponsorviewsdrivers.component.css']
 })
-export class DriverComponent implements OnInit {
-
+export class SponsorviewsdriversComponent implements OnInit {
   drivers: Driver[];
 
   constructor(private router: Router, private driverService: DriverserviceService) {
@@ -32,7 +31,9 @@ export class DriverComponent implements OnInit {
       })
   };
 
- 
+  addPointsPage(user: Driver): void {
+    this.router.navigate(['/add-points']);
+  }
 
   onLogout(){
     localStorage.removeItem('token')
@@ -40,7 +41,7 @@ export class DriverComponent implements OnInit {
   }
 
   onCancel(){
-    this.router.navigate(['/admin'])
+    this.router.navigate(['/sponsorhomepage'])
   }
 
 }

@@ -31,6 +31,8 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { ApplySponsorComponent } from './apply-sponsor/apply-sponsor.component';
 import { ShopCatalogComponent } from './shop-catalog/shop-catalog.component';
 import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { DeletePointsComponent } from './delete-points/delete-points.component';
 
 
 @NgModule({
@@ -64,6 +66,8 @@ import { SponsorprofileComponent } from './sponsorprofile/sponsorprofile.compone
     ApplySponsorComponent,
     ShopCatalogComponent,
     SponsorprofileComponent,
+    CatalogComponent,
+    DeletePointsComponent,
 
   ],
   imports: [

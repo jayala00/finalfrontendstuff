@@ -109,5 +109,16 @@ export class DriverserviceService {
   public registerDriver(driver) {
     return this.http.post<Driver>(this.driverUrl + "/registerdriver/", driver);
   }
+
+  public deleteDriverPoints(driver,email){
+
+    return this.http.post(this.driverUrl + '/deletepoints/' + email ,driver, {
+      headers: new HttpHeaders({
+           'Content-Type':  'application/json',
+         })
+    }).pipe(map(data =>
+     data));
+  }
+
 }
 

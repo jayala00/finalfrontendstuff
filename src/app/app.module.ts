@@ -43,6 +43,8 @@ import { EditadminpasswordComponent } from './editadminpassword/editadminpasswor
 import { EditadminemailComponent } from './editadminemail/editadminemail.component';
 import { ManageadminaccountComponent } from './manageadminaccount/manageadminaccount.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { DeletePointsComponent } from './delete-points/delete-points.component';
 
 
 @NgModule({
@@ -88,6 +90,8 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
     EditadminemailComponent,
     ManageadminaccountComponent,
     ResetpasswordComponent,
+    CatalogComponent,
+    DeletePointsComponent,
 
   ],
   imports: [

@@ -31,7 +31,6 @@ export class RegisterUserComponent implements OnInit {
 
   onSignUp() {
 
-
     if(this.type == "Driver") {
       console.log("driver match")
       this.driver.firstname = this.firstname

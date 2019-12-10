@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { DriverserviceService } from '../service/driverservice.service';
+import { Driver } from '../driver';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-shop-catalog',
@@ -8,17 +12,28 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ShopCatalogComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  driver: Driver = new Driver()
+  points:Int16Array
+  
 
-  url:string
+  constructor(private router: Router, private http:HttpClient, private driverService: DriverserviceService) { }
 
-  ngOnInit() {
-    //this.url = 'https://www.ebay.com/itm/PUMA-Drift-Cat-7S-Ultra-Mens-Shoes-Men-Shoe-Basics/273990412684?_trkparms=pageci%3Ae412d44e-1ac5-11ea-89fe-74dbd1801d2d%7Cparentrq%3Aec6fd5aa16e0acc6ecd24c26ffe76a5c%7Ciid%3A1';
-    //this.http.get(this.url).subscribe(root => console.log(root));
+  ngOnInit() { }
+
+  onBuy() {
+    console.log("buy clicked")
+    console.log(this.points)
+    this.driver.points = this.points
+    console.log(this.driver.points)
+    this.driverService.deleteDriverPoints( this.driver , localStorage.getItem('token'))
   }
 
-  addCart() {
-    
+  onLogout(){
+    localStorage.removeItem('token')
+    this.router.navigate(['/actuallogin'])
   }
 
+  goBack() {
+    this.router.navigate(['/driverhomepage'])
+  }
 }
